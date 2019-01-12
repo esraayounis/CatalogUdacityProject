@@ -25,24 +25,24 @@ session.add(User1)
 session.commit()
 
 # Items of first category "Men"
-catagory1 = Category(user_id=1, name="Men")
+category1 = Category(user_id=1, name="Men")
 
-session.add(catagory1)
+session.add(category1)
 session.commit()
 
-item1 = Item(user_id=1, name="Suit", description="Existing all Brands and all styles which fit all occasions.", category=catagory1)
+item1 = Item(user_id=1, name="Suit", description="Existing all Brands and all styles which fit all occasions.", category=category1)
 
 session.add(item1)
 session.commit()
 
 item2 = Item(user_id=1, name="Shirt & Jacket", description="Existing all Brands and with high quality all made of cotton 100% which suit all purposes work.",
-        category=catagory1)
+        category=category1)
 
 session.add(item2)
 session.commit()
 
 item3 = Item(user_id=1, name="Shoes", description="Existing all Brands and all types ( Formal , Sports).",
-        category=catagory1)
+        category=category1)
 
 session.add(item3)
 session.commit()
