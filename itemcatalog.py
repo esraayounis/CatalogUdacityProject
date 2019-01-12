@@ -30,7 +30,7 @@ catagory1 = Category(user_id=1, name="Men")
 session.add(catagory1)
 session.commit()
 
-item1 = Item(user_id=1, name="Suit", description="Existing all Brands and all styles which fit all occasions.", category=category1)
+item1 = Item(user_id=1, name="Suit", description="Existing all Brands and all styles which fit all occasions.", category=catagory1)
 
 session.add(item1)
 session.commit()
